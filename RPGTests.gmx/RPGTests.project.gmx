@@ -7,96 +7,114 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprites name="Player">
-      <sprite>sprites\spr_player_right</sprite>
       <sprite>sprites\spr_player_up</sprite>
-      <sprite>sprites\spr_player_left</sprite>
+      <sprite>sprites\spr_player_right</sprite>
       <sprite>sprites\spr_player_down</sprite>
-      <sprite>sprites\spr_player_shadow</sprite>
-      <sprite>sprites\spr_player_attack_down</sprite>
-      <sprite>sprites\spr_player_attack_right</sprite>
-      <sprite>sprites\spr_player_attack_left</sprite>
-      <sprite>sprites\spr_player_attack_up</sprite>
-      <sprite>sprites\spr_damage</sprite>
+      <sprite>sprites\spr_player_left</sprite>
     </sprites>
-    <sprites name="Enemies">
-      <sprite>sprites\spr_enemy_slime</sprite>
+    <sprites name="Objects">
+      <sprites name="Nature">
+        <sprite>sprites\spr_flower</sprite>
+        <sprite>sprites\spr_tree</sprite>
+      </sprites>
+      <sprite>sprites\spr_teddy</sprite>
     </sprites>
-    <sprites name="Level">
-      <sprite>sprites\spr_wall</sprite>
-      <sprite>sprites\spr_stoneWall</sprite>
-      <sprite>sprites\spr_chest</sprite>
-      <sprites name="Buildings">
-        <sprite>sprites\spr_house</sprite>
-        <sprite>sprites\spr_door_closed</sprite>
+    <sprites name="System">
+      <sprites name="Window">
+        <sprite>sprites\spr_Window_TL</sprite>
+        <sprite>sprites\spr_Window_TR</sprite>
+        <sprite>sprites\spr_Window_BL</sprite>
+        <sprite>sprites\spr_Window_BR</sprite>
+        <sprite>sprites\spr_Window_MT</sprite>
+        <sprite>sprites\spr_Window_MB</sprite>
+        <sprite>sprites\spr_Window_ML</sprite>
+        <sprite>sprites\spr_Window_MR</sprite>
+        <sprite>sprites\spr_Window_Base</sprite>
+      </sprites>
+      <sprites name="Collision">
+        <sprite>sprites\spr_Collision</sprite>
       </sprites>
     </sprites>
-    <sprites name="GUI">
-      <sprite>sprites\spr_heart</sprite>
-    </sprites>
-    <sprites name="Effects">
-      <sprite>sprites\spr_blood</sprite>
+    <sprites name="NPC">
+      <sprites name="Larry">
+        <sprite>sprites\spr_larry_down</sprite>
+        <sprite>sprites\spr_larry_up</sprite>
+        <sprite>sprites\spr_larry_left</sprite>
+        <sprite>sprites\spr_larry_right</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
-    <background>background\bg_grass</background>
-    <background>background\bg_dirt</background>
-    <background>background\bg_dirtGrass</background>
-    <background>background\bg_forest</background>
+    <backgrounds name="Areas">
+      <backgrounds name="TestTown">
+        <background>background\Map001_0_0</background>
+        <background>background\Map001_0_1</background>
+        <background>background\Map001_0_2</background>
+        <background>background\Map001_0_3</background>
+        <background>background\Map001_0_4</background>
+        <background>background\Map001_1_0</background>
+        <background>background\Map001_1_1</background>
+        <background>background\Map001_1_2</background>
+        <background>background\Map001_1_3</background>
+        <background>background\Map001_1_4</background>
+        <background>background\Map001_2_0</background>
+        <background>background\Map001_2_1</background>
+        <background>background\Map001_2_2</background>
+        <background>background\Map001_2_3</background>
+        <background>background\Map001_2_4</background>
+        <background>background\Map001_3_0</background>
+        <background>background\Map001_3_1</background>
+        <background>background\Map001_3_2</background>
+        <background>background\Map001_3_3</background>
+        <background>background\Map001_3_4</background>
+        <background>background\Map001_4_0</background>
+        <background>background\Map001_4_1</background>
+        <background>background\Map001_4_2</background>
+        <background>background\Map001_4_3</background>
+        <background>background\Map001_4_4</background>
+        <backgrounds name="Bar">
+          <background>background\Map002_0_0</background>
+          <background>background\Map002_0_1</background>
+          <background>background\Map002_1_0</background>
+          <background>background\Map002_1_1</background>
+        </backgrounds>
+      </backgrounds>
+    </backgrounds>
+    <background>background\bg_tileSet</background>
   </backgrounds>
   <paths name="paths"/>
-  <scripts name="scripts">
-    <scripts name="Helper Scripts">
-      <script>scripts\scr_get_face.gml</script>
-      <script>scripts\scr_get_input.gml</script>
-    </scripts>
-    <scripts name="Player States">
-      <script>scripts\scr_dash_state.gml</script>
-      <script>scripts\scr_move_state.gml</script>
-      <script>scripts\scr_attack_state.gml</script>
-      <script>scripts\scr_frozen_state.gml</script>
-    </scripts>
-    <scripts name="Enemy States">
-      <scripts name="Enemy Helper Scripts">
-        <script>scripts\scr_enemy_choose_next_state.gml</script>
-        <script>scripts\scr_check_for_player.gml</script>
-      </scripts>
-      <script>scripts\scr_enemy_idle_state.gml</script>
-      <script>scripts\scr_enemy_stall_state.gml</script>
-      <script>scripts\scr_enemy_wander_state.gml</script>
-      <script>scripts\scr_enemy_chase_state.gml</script>
-    </scripts>
-  </scripts>
-  <fonts name="fonts">
-    <font>fonts\fnt_HUD</font>
-  </fonts>
+  <scripts name="scripts"/>
+  <fonts name="fonts"/>
   <objects name="objects">
-    <object>objects\obj_lifeform_parent</object>
-    <objects name="Player">
-      <object>objects\obj_player</object>
-      <object>objects\obj_dash_effect</object>
-      <object>objects\obj_damage</object>
-      <object>objects\PlayerStats</object>
+    <object>objects\Player</object>
+    <objects name="Nature">
+      <object>objects\obj_flower</object>
+      <object>objects\obj_tree</object>
     </objects>
-    <objects name="Level">
-      <objects name="Buildings">
-        <object>objects\House</object>
-        <object>objects\DoorClosed</object>
+    <objects name="System">
+      <object>objects\GameState</object>
+      <objects name="Window">
+        <object>objects\obj_Window_Base</object>
       </objects>
-      <object>objects\obj_stoneWall</object>
-      <object>objects\obj_wall</object>
-      <object>objects\obj_view</object>
+      <object>objects\obj_Collision</object>
     </objects>
-    <objects name="Enemies">
-      <object>objects\obj_enemy_slime</object>
+    <objects name="NPCs">
+      <object>objects\obj_NPC_base</object>
+      <object>objects\obj_NPC_larry</object>
     </objects>
-    <objects name="Effects">
-      <object>objects\Blood</object>
+    <objects name="Quests">
+      <objects name="NPC Quests">
+        <objects name="NPC_Bob">
+          <object>objects\obj_teddy</object>
+        </objects>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_01</room>
-    <room>rooms\rm_02</room>
-    <room>rooms\rm_menu</room>
+    <room>rooms\rm_TitleScreen</room>
+    <room>rooms\rm_TestTown</room>
+    <room>rooms\rm_start</room>
+    <room>rooms\rm_bar</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
